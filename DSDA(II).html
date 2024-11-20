@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile of DSDA</title>
+    <link rel="stylesheet" href="adding.css">
+    <style>
+        body{
+            background-image: url(image/644a18b637053fa3709c5ba2_what-is-data-science.jpg)                                             ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        } 
+        .container{
+            margin-left: 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            column-gap: 0px;
+            row-gap: 20px;
+        }
+        .profile{
+            background-color: white;
+            width: 200px;
+            height: 300px;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+        .profile a{
+            text-decoration: none;
+            color: black;
+        }
+        .profile:hover{
+            transform: scale(1.05);
+        }
+        img{
+            width: 90%;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        p{
+            margin-left: 10px;
+            line-height: 10px;
+        }
+        .search{
+            width: 35%;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 8px;
+            margin-left: 70px;
+            margin-top: 20px;
+            box-shadow: 1px 1px 3px gray;
+            display: inline;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        .addinfo{
+            float: right;
+            margin: 20px 40px 0 0;
+            background-color: #ffb703;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 7px;
+        }
+
+        @media (max-width: 768px) {
+            .search {
+                width: 80%;
+                margin: 20px auto;
+                display: block;
+            }
+            .container {
+                grid-template-columns: 1fr 1fr;
+                margin-right: -13px;
+            }
+            .addinfo{
+                display: flex;
+                margin-left: 200px;
+                float: inline-start;
+                margin-top: -10px;
+                margin-bottom: 10px;
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <h3 style="color: white; display: inline-block; font-size: 24px; margin-left: 15px;">Data Science And Data Analytic Year II</h3>
+    <a href="form.html"><button class = "addinfo">Add</button></a>
+    <input type="text" class="search" placeholder="search">
+    <div class="container">
+        <div class = "profile"><a href="detailsform.html" target="_blank">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Adith Kumar Rai</P>
+            <p><Strong>Enroll no:</Strong> 07230001</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a>
+        </div>
+        <div class = "profile"><a href="detailsform.html" target="_blank">
+            <img src="DSDA image/chimi rinzin.jpg">
+            <P><strong>Name:</strong> Chimi R Drukpa</P>
+            <p><Strong>Enroll no:</Strong> 07230007</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a>
+        </div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Kuenga T Thinely</P>
+            <p><Strong>Enroll no:</Strong> 07230017</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <img src="DSDA image/pema namgay.jpg" alt="">
+            <P><strong>Name:</strong> Pema Namgay</P>
+            <p><Strong>Enroll no:</Strong> 07230019</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <img src="DSDA image/tshring om.jpg" alt="">
+            <P><strong>Name:</strong> Tshering Om</P>
+            <p><Strong>Enroll no:</Strong> 07230082</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Tshering Yangden</P>
+            <p><Strong>Enroll no:</Strong> 07230084</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Rinzin Dema</P>
+            <p><Strong>Enroll no:</Strong> 07230076</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Galey Mo</P>
+            <p><Strong>Enroll no:</Strong> 07230011</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <img src="DSDA image/gyembo.jpg" alt="">
+            <P><strong>Name:</strong> Gyembo Wangchuk</P>
+            <p><Strong>Enroll no:</Strong> 07230028</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Anup Gurung</P>
+            <p><Strong>Enroll no:</Strong> 07230010</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <img src="DSDA image/cheki dorji.jpg" alt="">
+            <P><strong>Name:</strong> Cheki Dorji</P>
+            <p><Strong>Enroll no:</Strong> 07230004</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Sonam Yangchen</P>
+            <p><Strong>Enroll no:</Strong> 07230064</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Sonam Chople</P>
+            <p><Strong>Enroll no:</Strong> 07230061</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Sonam Dorji</P>
+            <p><Strong>Enroll no:</Strong> 07230043</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Ranjana Sunwar</P>
+            <p><Strong>Enroll no:</Strong> 07230040</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Drimey Yoezer</P>
+            <p><Strong>Enroll no:</Strong> 07230010</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Karma Dorji</P>
+            <p><Strong>Enroll no:</Strong> 07230030</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Namgay Thinley</P>
+            <p><Strong>Enroll no:</Strong> 07230037</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Karma S Tashi</P>
+            <p><Strong>Enroll no:</Strong> 07230048</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Yeshi Drayang</P>
+            <p><Strong>Enroll no:</Strong> 07230091</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <img src="DSDA image/pema wangdi (khir).jpg" alt="">
+            <P><strong>Name:</strong> Pema Wangdi</P>
+            <p><Strong>Enroll no:</Strong> 07230074</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Kinzang Dorji</P>
+            <p><Strong>Enroll no:</Strong> 07230034</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <img src="DSDA image/deki yongden.jpg" alt="">
+            <P><strong>Name:</strong> Deki Youngden</P>
+            <p><Strong>Enroll no:</Strong> 07230027</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Pema Wangdi</P>
+            <p><Strong>Enroll no:</Strong> 07230038</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Tshering Pemo</P>
+            <p><Strong>Enroll no:</Strong> 07230083</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Tashi Pelden</P>
+            <p><Strong>Enroll no:</Strong> 07230022</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Tara M Limbu</P>
+            <p><Strong>Enroll no:</Strong> 07230078</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Bishnu K Kharki</P>
+            <p><Strong>Enroll no:</Strong> 07230003</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Lungten Zangmo</P>
+            <p><Strong>Enroll no:</Strong> 07230018</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Sonam Phuntsho</P>
+            <p><Strong>Enroll no:</Strong> 07230044</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Yeshi Choden</P>
+            <p><Strong>Enroll no:</Strong> 07230090</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Phub Dema</P>
+            <p><Strong>Enroll no:</Strong> 07230039</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <img src="DSDA image/rinchen dorji.jpg" alt="">
+            <P><strong>Name:</strong> Rinchen Dorji</P>
+            <p><Strong>Enroll no:</Strong> 07230058</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Yam Kumar Rai</P>
+            <p><Strong>Enroll no:</Strong> 07230089</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Sangay Tshomo</P>
+            <p><Strong>Enroll no:</Strong> 07230059</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Manita Gurung</P>
+            <p><Strong>Enroll no:</Strong> 07230036</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Tashi Lhamo</P>
+            <p><Strong>Enroll no:</Strong> 07230079</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <img src="DSDA image/kinley zam.jpg" alt="">
+            <P><strong>Name:</strong> Kinley Zam</P>
+            <p><Strong>Enroll no:</Strong> 07230051</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Jigme L Namgyal</P>
+            <p><Strong>Enroll no:</Strong> 07230029</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Yoenten Tharchan</P>
+            <p><Strong>Enroll no:</Strong> 07230069</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Chimi Lham</P>
+            <p><Strong>Enroll no:</Strong> 07230006</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Man Singh Layo</P>
+            <p><Strong>Enroll no:</Strong> 07230054</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <img src="DSDA image/pema chode.jpg" alt="">
+            <P><strong>Name:</strong> Pema Choden</P>
+            <p><Strong>Enroll no:</Strong> 07230055</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class = "profile"><a href="detailsform.html">
+            <div style=" width: 90%; height: 150px; border-radius: 10px; object-fit: cover; margin-left: 10px; margin-top: 10px; background-color: gray;"></div>
+            <P><strong>Name:</strong> Sangay Wangmo</P>
+            <p><Strong>Enroll no:</Strong> 07230042</p>
+            <p><strong>Course:</strong> DSDA</p>
+            <p><strong>Year:</strong> 2</p>
+        </a></div>
+        <div class="oprofile" id="profile" style="display: block;">
+            <a href="detailsform.html" target="_blank">
+                <img alt="Profile Image" class="oprofile-image" height="150" id="profileImage" src="" width="180" />
+                <p><strong>Name:</strong><span id="profileName"></span></p>
+                <p><strong>Enroll no:</strong><span id="profileEnrollNo"></span></p>
+                <p><strong>Course:</strong><span id="profileCourse"></span></p>
+                <p><strong>Year:</strong><span id="profileYear"></span></p>
+            </a>
+            <div class="kebab-menu" id="kebabMenu">
+                &#x22EE; 
+            </div>
+            <div class="menu" id="menu">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                <div class="menu-item" id="saveProfile"> <a href="DSDA(II).html" style="color: black;">Save</a></div>
+                <div class="menu-item" id="editProfile">Edit</div>
+                <div class="menu-item" id="deleteProfile">Delete</div>
+            </div>
+        </div>
+    </div>
+    <script src="adding.js"></script>
+</body>
+</html>

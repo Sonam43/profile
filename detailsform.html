@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>Profile Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="detailsform.css">
+</head>
+<body>
+    <header>
+        <div class="header"></div>
+        <div class="profile">
+            <img alt="Profile picture of a smiling person" height="200" id="profile-pic" src="" width="200" style="background-color: gray; color: gray;"/>
+        </div>
+    </header>
+    <article>
+        <div class="content">
+            <div class="details">
+                <form id="profile-form" onsubmit="saveProfile(event)">
+                    <section class="basic-info">
+                        <h2>Basic Information</h2>
+                        <div class="form-group">
+                            <label for="profile-pic-upload">Upload Profile Picture:</label>
+                            <input accept="image/*" disabled id="profile-pic-upload" name="profile-pic-upload" type="file"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth:</label>
+                            <input disabled id="dob" name="dob" type="date"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender:</label>
+                            <input disabled id="gender" name="gender" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input disabled id="email" name="email" type="email"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input disabled id="phone" name="phone" type="tel"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Permanent Address:</label>
+                            <textarea disabled id="address" name="address"></textarea>
+                        </div>
+                        <button class="edit-btn" onclick="enableEdit('basic-info')" type="button">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </section>
+                    <section class="academic-info">
+                        <h2>Academic Information</h2>
+                        <div class="form-group">
+                            <label for="year">Year:</label>
+                            <input disabled id="year" name="year" type="number"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course:</label>
+                            <input disabled id="course" name="course" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="enrollment-date">Enrollment Date:</label>
+                            <input disabled id="enrollment-date" name="enrollment-date" type="date"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="graduation-date">Expected Graduation:</label>
+                            <input disabled id="graduation-date" name="graduation-date" type="date"/>
+                        </div>
+                        <button class="edit-btn" onclick="enableEdit('academic-info')" type="button">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </section>
+                    <section class="extracurricular-activities">
+                        <h2>Extracurricular Activities</h2>
+                        <div class="form-group">
+                            <label for="activities">Activities:</label>
+                            <textarea disabled id="activities" name="activities"></textarea>
+                        </div>
+                        <button class="edit-btn" onclick="enableEdit('extracurricular-activities')" type="button">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </section>
+                    <section class="skills-interests">
+                        <h2>Skills and Interests</h2>
+                        <div class="form-group">
+                            <label for="skills">Skills:</label>
+                            <textarea disabled id="skills" name="skills"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="interests">Interests:</label>
+                            <textarea disabled id="interests" name="interests"></textarea>
+                        </div>
+                        <button class="edit-btn" onclick="enableEdit('skills-interests')" type="button">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </section>
+                    <section class="achievements">
+                        <h2>Achievements and Awards</h2>
+                        <div class="form-group">
+                            <label for="achievements">Achievements:</label>
+                            <textarea disabled id="achievements" name="achievements"></textarea>
+                        </div>
+                        <button class="edit-btn" onclick="enableEdit('achievements')" type="button">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </section>
+                    <section class="personal-statement">
+                        <h2>About Me</h2>
+                        <div class="form-group">
+                            <label for="about-me">Personal Statement:</label>
+                            <textarea disabled id="about-me" name="about-me"></textarea>
+                        </div>
+                        <button class="edit-btn" onclick="enableEdit('personal-statement')" type="button">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </section>
+                    <div class="form-group">
+                        <button onclick="deleteProfile()" type="button">Delete</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" style="margin-left: 100px; margin-top: -58px;" >Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </article>
+    <script src="detailsform.js"></script>
+</body>
+</html>

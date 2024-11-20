@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar container with fixed position */
+        .navbar {
+            background-color: darkblue;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between; /* Space between logo and links */
+            align-items: center;
+        }
+
+        /* Logo container */
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .navbar-logo img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar-logo h3 {
+            color: white;
+            margin: 0;
+        }
+
+        /* Navbar links container */
+        .navbar-nav {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ff5722;
+        }
+
+        /* Adjust navbar items for small screens */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .navbar-logo {
+                order: -1; /* Make logo appear first */
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Body Content */
+        body {
+            padding-top: 80px; /* To avoid content being hidden behind navbar */
+        }
+
+        /* Profile Image Hover Effect */
+        .profile-image {
+            width: 120px;  /* Square size */
+            height: 120px; /* Square size */
+            object-fit: cover;
+            border-radius: 0%;  /* Square images */
+            transition: transform 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+
+        /* Layout adjustments */
+        .profile-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .profile-card {
+            text-align: center;
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .profile-card p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Ensure Navbar Links Fit (Prevent Overflow) */
+        .navbar-nav {
+            white-space: nowrap;  /* Prevents wrapping */
+            overflow: hidden;
+        }
+
+        /* Adjust the layout of the navigation links */
+        .navbar-nav .nav-link {
+            padding: 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header class="navbar">
+        <!-- Logo Section -->
+        <div class="navbar-logo">
+            <img src="image/Sherubtse College.png" alt="Sherubtse College Logo">
+            <h3>Sherubtse College</h3>
+        </div>
+
+        <!-- Links Section -->
+        <div class="navbar-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="student.html" class="nav-link">Student Profiles</a>
+            <a href="#" class="nav-link">FAQ</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <main class="container my-4">
+        <h3 class="text-center">About Our Website</h3>
+        <p class="text-center">
+            Our website provides a comprehensive view of student achievements, skills, and goals, illustrating a path of
+            continuous growth and commitment to future success!
+        </p>
+
+        <h3>Mission</h3>
+        <p>
+            To empower students with knowledge, skills, and experiences that shape well-rounded responsible, and
+            innovative individuals, committed to excellence and equipped to make a positive impact in their communities!
+        </p>
+
+        <h3>Vision</h3>
+        <p>
+            To inspire continuous learning, personal growth, and meaningful contributions to society, fostering a future
+            where every student can achieve their fullest potential!
+        </p>
+
+        <!-- Team Section -->
+        <h3 class="text-center mt-4">Meet Our Team</h3>
+        <div class="profile-container">
+            <!-- Member 1 -->
+            <div class="profile-card">
+                <img src="image/pema namgay.jpeg" alt="Pema Namgay" class="profile-image">
+                <p><strong>Name:</strong> Pema Namgay</p>
+                <p><strong>Role:</strong> Web Designer</p>
+                <p><strong>College:</strong> Sherubtse College Of Education</p>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="profile-card">
+                <img src="image/pema wangdi1.jpeg" alt="Pema Wangdi" class="profile-image">
+                <p><strong>Name:</strong> Pema Wangdi</p>
+                <p><strong>Role:</strong> Front End Developer</p>
+                <p><strong>College:</strong> Sherubtse College Of Education</p>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="profile-card">
+                <img src="image/chimi.jpeg" alt="Chimi Rinzin Drukpa" class="profile-image">
+                <p><strong>Name:</strong> Chimi Rinzin Drukpa</p>
+                <p><strong>Role:</strong> Web Designer</p>
+                <p><strong>College:</strong> Sherubtse College Of Education</p>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="profile-card">
+                <img src="image/pema choden.jpeg" alt="Pema Choden" class="profile-image">
+                <p><strong>Name:</strong> Pema Choden</p>
+                <p><strong>Role:</strong> Front End Developer</p>
+                <p><strong>College:</strong> Sherubtse College Of Education</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Sherubtse College. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
